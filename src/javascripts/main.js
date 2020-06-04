@@ -1,4 +1,10 @@
 import 'bootstrap';
 import '../styles/main.scss';
+import eatDom from './components/eat';
 
-console.error('is this thing on?');
+
+const init = () => {
+  eatDom.tamoEat();
+};
+
+init();
