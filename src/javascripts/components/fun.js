@@ -5,6 +5,7 @@ let fun = 50;
 const tamoFun = () => {
   let domString = '';
   domString += `
+    <h3>Play Time</h3>
     <div id="counter">${fun}</div>
     <button class="real-fun-btn" id="real-fun-counter">Real Fun</button>
     <button class="sorta-fun-btn" id="sorta-fun-counter">Sorta Fun</button>

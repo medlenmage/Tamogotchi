@@ -6,6 +6,7 @@ let full = 100;
 const tamoEat = () => {
   let domString = '';
   domString += `
+    <h3>Eatting</h3>
     <div id="counter">${full}</div>
     <button class="healthy-btn" id="healthy-counter">Healthy Food</button>
     <button class="unhealthy-btn" id="unhealthy-counter">Unhealthy Food</button>
