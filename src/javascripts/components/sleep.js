@@ -5,10 +5,10 @@ let energy = 50;
 const tamoSleep = () => {
   let domString = '';
   domString += `
-    <h3>Sleeping</h3>
-    <div id="counter">${energy}</div>
-    <button class="nap-btn" id="nap-counter">Nappy Nap</button>
-    <button class="deep-sleep-btn" id="deep-sleep-counter">Going to bed</button>
+    <h3 class="sleep-header">Sleeping</h3>
+    <div id="counter" class="energy">${energy}</div>
+    <button class="nap-btn btn-plus" id="nap-counter">Nappy Nap</button>
+    <button class="deep-sleep-btn btn-plus" id="deep-sleep-counter">Going to bed</button>
   `;
 
   printToDom.printToDom('#sleep', domString);

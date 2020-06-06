@@ -6,10 +6,10 @@ let full = 100;
 const tamoEat = () => {
   let domString = '';
   domString += `
-    <h3>Eatting</h3>
-    <div id="counter">${full}</div>
-    <button class="healthy-btn" id="healthy-counter">Healthy Food</button>
-    <button class="unhealthy-btn" id="unhealthy-counter">Unhealthy Food</button>
+    <h3 class="eating-header">Eatting</h3>
+    <div id="counter" class="eating">${full}</div>
+    <button class="healthy-btn btn-plus" id="healthy-counter">Healthy Food</button>
+    <button class="unhealthy-btn btn-minus" id="unhealthy-counter">Unhealthy Food</button>
   `;
 
   printToDom.printToDom('#eat', domString);
