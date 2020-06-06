@@ -5,10 +5,10 @@ let strength = 100;
 const tamoFight = () => {
   let domString = '';
   domString += `
-    <h3>Fighting</h3>
-    <div id="counter">${strength}</div>
-    <button class="run-away-btn" id="run-counter">Run Away</button>
-    <button class="violence-btn" id="violence-counter">Get Violent</button>
+    <h3 class="fighting-header">Fighting</h3>
+    <div id="counter" class="strength">${strength}</div>
+    <button class="run-away-btn btn-plus" id="run-counter">Run Away</button>
+    <button class="violence-btn btn-minus" id="violence-counter">Get Violent</button>
   `;
 
   printToDom.printToDom('#fight', domString);

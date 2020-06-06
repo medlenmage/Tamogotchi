@@ -1,4 +1,105 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Bellota&family=Indie+Flower&family=Metal+Mania&display=swap');
 
+body {
+  background-color: darkgray;
+}
 
+#eat {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#play {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+
+}
+
+#fight {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+#sleep {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.btn-plus {
+  background-color: skyblue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+}
+
+.btn-minus {
+  background-color: red;
+  border-radius: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fighting-header {
+  font-family:'Metal Mania', cursive;
+  margin-left: 55px;
+  color: darkred;
+}
+
+.fun-header {
+  font-family: 'Architects Daughter', cursive;
+  margin-left: 20px;
+  font-weight: bold;
+  color: lightsteelblue
+}
+
+.eating-header {
+  font-family: 'Indie Flower', cursive;
+  margin-left: 80px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.sleep-header {
+  font-family: 'Bellota', cursive;
+  margin-left: 45px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.energy {
+  margin-left: 95px;
+  padding-bottom: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+}
+
+.eating {
+  margin-left: 110px;
+  padding-bottom: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+}
+
+.fun {
+  margin-left: 75px;
+  padding-bottom: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+}
+
+.strength {
+  margin-left: 82px;
+  padding-bottom: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+}
