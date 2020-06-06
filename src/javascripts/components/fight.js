@@ -2,6 +2,8 @@ import printToDom from '../helpers/utils';
 
 let strength = 100;
 
+const getStrength = () => strength;
+
 const tamoFight = () => {
   let domString = '';
   domString += `
@@ -27,7 +29,11 @@ const squareUp = () => {
   if (strength < 0) strength = 0;
   tamoFight();
 };
-$('body').on('click', '#run-counter', runAway);
-$('body').on('click', '#violence-counter', squareUp);
 
-export default { tamoFight };
+
+export default {
+  tamoFight,
+  getStrength,
+  runAway,
+  squareUp,
+};

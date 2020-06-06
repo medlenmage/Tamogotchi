@@ -3,6 +3,8 @@ import printToDom from '../helpers/utils';
 
 let full = 100;
 
+const getFull = () => full;
+
 const tamoEat = () => {
   let domString = '';
   domString += `
@@ -28,7 +30,10 @@ const countDown = () => {
   if (full < 0) full = 0;
   tamoEat();
 };
-$('body').on('click', '#healthy-counter', countUp);
-$('body').on('click', '#unhealthy-counter', countDown);
 
-export default { tamoEat };
+export default {
+  tamoEat,
+  getFull,
+  countUp,
+  countDown,
+};
