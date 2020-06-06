@@ -15,7 +15,9 @@ const tamoFight = () => {
 };
 
 const runAway = () => {
+  if (strength === 100) return;
   strength += 1;
+  if (strength > 100) strength = 100;
   tamoFight();
 };
 
