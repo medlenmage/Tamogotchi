@@ -2,6 +2,8 @@ import printToDom from '../helpers/utils';
 
 let energy = 50;
 
+const getEnergy = () => energy;
+
 const tamoSleep = () => {
   let domString = '';
   domString += `
@@ -27,7 +29,11 @@ const sleep = () => {
   if (energy > 100) energy = 100;
   tamoSleep();
 };
-$('body').on('click', '#nap-counter', napping);
-$('body').on('click', '#deep-sleep-counter', sleep);
 
-export default { tamoSleep };
+
+export default {
+  tamoSleep,
+  getEnergy,
+  napping,
+  sleep,
+};

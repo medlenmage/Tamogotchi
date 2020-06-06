@@ -2,6 +2,8 @@ import printToDom from '../helpers/utils';
 
 let fun = 50;
 
+const getFun = () => fun;
+
 const tamoFun = () => {
   let domString = '';
   domString += `
@@ -27,7 +29,10 @@ const tamoKindaFun = () => {
   if (fun > 0) fun = 100;
   tamoFun();
 };
-$('body').on('click', '#real-fun-counter', realFun);
-$('body').on('click', '#sorta-fun-counter', tamoKindaFun);
 
-export default { tamoFun };
+export default {
+  tamoFun,
+  getFun,
+  realFun,
+  tamoKindaFun,
+};
